@@ -1,2 +1,2 @@
 language = "bash"
-run = "python distance_converter/main.py"
+run = "python color_predictor/main.py"
