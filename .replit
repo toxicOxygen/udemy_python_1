@@ -1,2 +1,2 @@
 language = "bash"
-run = "python color_predictor/main.py"
+run = "python time_module/main.py"
