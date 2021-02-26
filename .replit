@@ -1,2 +1,2 @@
 language = "bash"
-run = "python time_module/main.py"
+run = "python3 matplot_lib/main.py"
