@@ -1,0 +1,2 @@
+language = "bash"
+run = "python distance_converter/main.py"
