@@ -1,5 +1,6 @@
 from urllib import request
 import json
+import html
 import random
 
 def getQuestion():
@@ -18,11 +19,17 @@ def mixOptions(correct, incorrect):
   return n,incorrect
 
 def formatQuestion(question):
-  m = question.replace("&quot;",'"')
+  m = html.unescape(question)
   return m
 
 while True:
-  obj = getQuestion()
+  obj = None
+  try:
+    obj = getQuestion()
+  except:
+    print("an error occur while retriving question")
+    continue
+  
   correct_answer = obj.get('correct_answer')
   incorrect_answers = obj.get('incorrect_answers')
   question = formatQuestion(obj.get('question'))
