@@ -1,2 +1,2 @@
 language = "bash"
-run = "python3 trivia/main.py"
+run = "python3 pandas/main.py"
